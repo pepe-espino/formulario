@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Inscripcion alumno Dual</title>
+</head>
+<body>
+    <h1>Formulario Inscripcion alumno Dual</h1>
+    <form action="/datosalumnosdual" method="post">
+        <fieldset>
+            <legend style="color: gray;">Datos personales</legend>
+            <label for="nombre">Nombre: </label>
+            <input type="text" required><br><br>
+            <label for="apellidos">Apellidos: </label>
+            <input type="text" required><br><br>
+            <label for="edad">Edad: </label>
+            <input type="number" name="edad" id="edad" required><br><br>
+            <label for="sexo">Sexo: </label>
+            <div>
+                <input type="radio" name="sexo" id="masculino" checked>Masculino <br>
+                <input type="radio" name="sexo" id="femenino">Femenino <br>
+                <input type="radio" name="sexo" id="no binario">No Binario
+            </div>
+        </fieldset><br>
+        <fieldset>
+            <legend style="color: gray;">Otros</legend>
+            <label for="provincia">Provincia</label>
+            <select name="provincia" id="provincia" required>
+                <option value="Sevilla">Sevilla</option>
+                <option value="Málaga">Málaga</option>
+                <option value="Cádiz">Cádiz</option>
+                <option value="Almería">Almería</option>
+                <option value="Jaén">Jaén</option>
+                <option value="Córdoba">Córdoba</option>
+                <option value="Huelva">Huelva</option>
+            </select><br><br>
+            <label for="curriculum">Curriculum</label>
+            <input type="file" name="curriculum" id="curriculum"><br><br>
+            <label for="observaciones">Observaciones: </label><br>
+            <textarea name="observaciones" id="observaciones"></textarea>
+        </fieldset><br>
+        <a href="registro_correcto.html"><input type="button" value="Enviar"></a>
+    </form>
+</body>
+</html>
